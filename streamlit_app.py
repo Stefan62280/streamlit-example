@@ -4,7 +4,7 @@ from langchain.llms import OpenAI
 st.title('🦜🔗 Chatbot basique (POC MEL)')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
-System_prompt = st.sidebar.text_imput('test')
+system_prompt = st.sidebar.text_imput('test')
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
