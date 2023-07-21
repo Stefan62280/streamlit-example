@@ -5,7 +5,7 @@ from langchain.memory import ConversationBufferWindowMemory
 st.title('🦜🔗 Chatbot basique (POC MEL)')
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
-System_prompt = st.sidebar.text_input(template)
+system_prompt = st.sidebar.text_input(template)
 
 template = """MEL-Chat est un modèle de langage entrainé par OpenAI.
 MEL-Chat est conçu pour pouvoir vous aider dans un large éventail de tâches, allant de la réponse à des questions simples à la fourniture d'explications et de discussions approfondies sur un large éventail de sujets. En tant que modèle de langage, MEL-Chat est capable de générer un texte de type humain en fonction de l'entrée qu'il reçoit, ce qui lui permet de s'engager dans des conversations au son naturel et de fournir des réponses cohérentes et pertinentes pour le sujet traité.
